@@ -39,6 +39,8 @@ O projeto segue a arquitetura em camadas, separando responsabilidades para garan
 
 ### Justificativa da escolha
 
+Optei pela arquitetura em camadas por se tratar de um projeto simples e direto, que não demandava uma estrutura complexa. Essa abordagem garante organização e separação de responsabilidades, facilitando a manutenção do código e possíveis evoluções futuras. Além disso, a arquitetura em camadas contribui para a escalabilidade, permitindo que novas funcionalidades sejam incorporadas sem comprometer a essência e a clareza do projeto.
+
 A opção por camadas traz benefícios:
 
 - Separação de responsabilidades → cada parte do código tem um papel claro.
