@@ -1,0 +1,21 @@
+version: "3.8"
+services:
+  mongo:
+    image: mongo:latest
+    container_name: mongo_db_syncnet
+    ports:
+      - "27017:27017"
+    volumes:
+      - mongo-data:/data/db
+    environment:
+      MONGO_INITDB_ROOT_USERNAME: root
+      MONGO_INITDB_ROOT_PASSWORD: rootpassword
+      MONGO_INITDB_DATABASE: syncnet_logs
+    restart: always
+
+networks:
+  backend:
+    driver: bridge
+
+volumes:
+  mongo-data:
